@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths financières</title>
+    <link rel="stylesheet" href="frenche.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('../images/background.png') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px; /* Pour espacer les cercles du bouton retour */
+        }
+
+        .track {
+            position: relative;
+            width: 150px; /* Ajustez la taille selon vos besoins */
+            height: 150px; /* Ajustez la taille selon vos besoins */
+        }
+ .top-circle {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .bottom-circles {
+            display: flex;
+            gap: 50px; /* Espace entre les cercles en bas */
+        }
+
+        .track {
+            position: relative;
+            width: 180px; /* Taille ajustée pour le cercle */
+            height: 180px; /* Taille ajustée pour le cercle */
+        }
+
+        .contour {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Assure que l'image s'ajuste bien au conteneur */
+            z-index: 1; /* Place l'image de contour derrière */
+        }
+
+        .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            z-index: 2; /* Place le bouton devant */
+        }
+
+        .btn img {
+            width: 90%; /* Ajustez la taille pour qu'elle soit relative au contour */
+            height: 90%; /* Assure que l'image du bouton reste proportionnée */
+            object-fit: contain; /* Maintient l'image à l'intérieur des limites */
+            display: block;
+        }
+
+        .return-link {
+            font-size: 14px; /* Taille plus petite pour le texte du bouton retour */
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px 10px; /* Plus petit padding pour réduire la taille globale */
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px; /* Espacement au-dessus du bouton retour */
+        }
+
+        .return-link:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="bottom-circles">
+        <div class="track" id="track1">
+            <img src="../images/Layer.png" class="contour" alt="Contour">
+            <button class="btn" onclick="location.href='../page2/track.html'">
+                <img src="../images/frenchtrack.png" alt="Track Button">
+            </button>
+        </div>
+        <div class="track" id="track3">
+            <img src="../images/Layer.png" class="contour" alt="Contour">
+            <button class="btn" onclick="location.href='../page5/maths.html'">
+                <img src="../images/frenchtrack.png" alt="Track Button">
+            </button>
+        </div>
+    </div><div class="top-circle">
+        <div class="track" id="track2">
+            <img src="../images/Layer.png" class="contour" alt="Contour">
+            <button class="btn" onclick="location.href='../page2/tracks.html'">
+                <img src="../images/frenchtrack.png" alt="Track Button">
+            </button>
+        </div>
+    </div>
+    <div class="bottom-circles">
+        <div class="track" id="track1">
+            <img src="../images/Layer.png" class="contour" alt="Contour">
+            <button class="btn" onclick="location.href='../page2/track.html'">
+                <img src="../images/frenchtrack.png" alt="Track Button">
+            </button>
+        </div>
+        <div class="track" id="track3">
+            <img src="../images/Layer.png" class="contour" alt="Contour">
+            <button class="btn" onclick="location.href='../page2/track.html'">
+                <img src="../images/frenchtrack.png" alt="Track Button">
+            </button>
+        </div>
+    </div>
+    <a href="../page21/mathsA.html" class="return-link">&lt; Retour</a>
+</body>
+</html>
